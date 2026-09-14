@@ -107,6 +107,10 @@ h2{font-size:25px;font-weight:800;line-height:1.32;letter-spacing:-0.8px;color:v
 .apply{background:var(--navy);}
 .btn{display:block;text-align:center;background:var(--sage);color:#10192C;font-weight:800;font-size:16px;
   padding:16px;border-radius:12px;text-decoration:none;margin-top:24px;letter-spacing:-.3px;}
+.btn2{display:block;text-align:center;margin-top:9px;padding:15px;border-radius:12px;text-decoration:none;background:transparent;color:var(--ink);border:1px solid var(--line);font-weight:700;font-size:15px;}
+.sec.navy .btn2{color:var(--cream);border-color:rgba(255,255,255,.32);}
+.bnote{margin-top:13px;font-size:12.5px;line-height:1.7;color:var(--mut);text-align:center;}
+.sec.navy .bnote{color:#A9B4C6;}
 .btn:focus-visible{outline:3px solid #fff;outline-offset:2px;}
 .contact{margin-top:16px;text-align:center;font-size:12px;color:#9FADC2;line-height:1.7;}
 .contact a{color:#C4CEDE;}
@@ -131,8 +135,13 @@ h2{font-size:25px;font-weight:800;line-height:1.32;letter-spacing:-0.8px;color:v
 /* sticky cta */
 .sticky{position:fixed;bottom:0;left:0;right:0;z-index:50;display:flex;justify-content:center;pointer-events:none;}
 .sticky .in{width:100%;max-width:480px;padding:10px 14px 14px;background:linear-gradient(180deg,rgba(14,22,38,0),rgba(14,22,38,.88) 40%);pointer-events:auto;}
-.sticky a{display:block;text-align:center;background:var(--sage);color:#10192C;font-weight:800;font-size:15px;
-  padding:14px;border-radius:11px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.35);}
+.sticky .note{text-align:center;font-size:11.5px;letter-spacing:.3px;color:#C4CEDE;font-weight:700;margin-bottom:7px;}
+.sticky .btns{display:flex;gap:8px;}
+.sticky a{display:block;text-align:center;font-weight:800;font-size:15px;padding:14px 10px;border-radius:11px;
+  text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.35);}
+.sticky a.solid{flex:1.45;background:var(--sage);color:#10192C;}
+.sticky a.ghost{flex:1;background:rgba(255,255,255,.08);color:#EAF0F8;border:1px solid rgba(255,255,255,.34);
+  box-shadow:none;font-weight:700;}
 .pad-bottom{height:76px;background:var(--navy);}
 /* reveal */
 .rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease;}
@@ -310,7 +319,9 @@ h2{font-size:25px;font-weight:800;line-height:1.32;letter-spacing:-0.8px;color:v
     <div class="eyebrow">ADMISSION</div>
     <h2>WILA 2기,<br>20명만 함께합니다</h2>
     <p class="sub">회원 수를 늘리는 것이 목표가 아닙니다. 서로의 이름을 기억하고, 끝나고도 함께 일할 수 있는 <b>밀도 있는 커뮤니티</b>를 위해 정원을 20명으로 둡니다.</p>
-    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSc25xUOmxXRfGALHjoML8yaQ4qdv1pAM3IFyFlKp8J_t8vb1g/viewform" target="_blank" rel="noopener">2기 참가 신청하기</a>
+    <a class="btn" href="https://docs.google.com/document/d/1m7AkQOZTrefQM950Nlzj2E2Cslb2Fq5mtpWJTXPcPGA/mobilebasic" target="_blank" rel="noopener">입학 지원하기</a>
+    <a class="btn2" href="https://docs.google.com/forms/d/e/1FAIpQLSc25xUOmxXRfGALHjoML8yaQ4qdv1pAM3IFyFlKp8J_t8vb1g/viewform" target="_blank" rel="noopener">먼저 상담 신청하기</a>
+    <div class="bnote">입학지원서를 작성해 제출하시면 서류 검토 후 인터뷰를 안내드립니다.<br>과정이 궁금하신 분은 상담부터 신청하셔도 됩니다.</div>
     <div class="ctc">
       <a href="https://www.instagram.com/wila_official_korea/" target="_blank" rel="noopener">
         <span class="lb">인스타</span><span class="vl">@wila_official_korea</span></a>
@@ -322,7 +333,7 @@ h2{font-size:25px;font-weight:800;line-height:1.32;letter-spacing:-0.8px;color:v
   <div class="pad-bottom"></div>
 </div>
 
-<div class="sticky"><div class="in"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc25xUOmxXRfGALHjoML8yaQ4qdv1pAM3IFyFlKp8J_t8vb1g/viewform" target="_blank" rel="noopener">2기 참가 신청하기 — 10월 10일 개강 · 20명 한정</a></div></div>
+<div class="sticky"><div class="in"><div class="note">10월 10일 개강 · 20명 한정</div><div class="btns"><a class="ghost" href="https://docs.google.com/forms/d/e/1FAIpQLSc25xUOmxXRfGALHjoML8yaQ4qdv1pAM3IFyFlKp8J_t8vb1g/viewform" target="_blank" rel="noopener">상담 신청</a><a class="solid" href="https://docs.google.com/document/d/1m7AkQOZTrefQM950Nlzj2E2Cslb2Fq5mtpWJTXPcPGA/mobilebasic" target="_blank" rel="noopener">입학 지원하기</a></div></div></div>
 
 <script>
 (function(){
